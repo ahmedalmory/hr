@@ -17,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::resource('constants', 'ConstantController');
+Route::resource('office-shifts', 'OfficeShiftController');
+Route::resource('countries', 'CountryController');
+Route::resource('departments', 'DepartmentController');
+Route::resource('designations', 'DesignationController');
+Route::resource('roles', 'RoleController');
+Route::resource('users', 'UserController');
