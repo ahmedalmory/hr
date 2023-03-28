@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "anlutro/l4-settings",
-            "version": "v1.3.0",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/anlutro/laravel-settings.git",
-                "reference": "1dcde024f8d0c0efb086bc04bf063d74df87e448"
+                "reference": "8f3c602b6eb440fb4211d2aa028f879a779f037f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anlutro/laravel-settings/zipball/1dcde024f8d0c0efb086bc04bf063d74df87e448",
-                "reference": "1dcde024f8d0c0efb086bc04bf063d74df87e448",
+                "url": "https://api.github.com/repos/anlutro/laravel-settings/zipball/8f3c602b6eb440fb4211d2aa028f879a779f037f",
+                "reference": "8f3c602b6eb440fb4211d2aa028f879a779f037f",
                 "shasum": ""
             },
             "require": {
@@ -65,9 +65,9 @@
             "description": "Persistent settings in Laravel.",
             "support": {
                 "issues": "https://github.com/anlutro/laravel-settings/issues",
-                "source": "https://github.com/anlutro/laravel-settings/tree/v1.3.0"
+                "source": "https://github.com/anlutro/laravel-settings/tree/v1.3.1"
             },
-            "time": "2023-02-15T21:39:04+00:00"
+            "time": "2023-03-27T09:47:32+00:00"
         },
         {
             "name": "brick/math",
@@ -6513,16 +6513,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.0.18",
+            "version": "10.0.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "582563ed2edc62d1455cdbe00ea49fe09428eef3"
+                "reference": "20c23e85c86e5c06d63538ba464e8054f4744e62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/582563ed2edc62d1455cdbe00ea49fe09428eef3",
-                "reference": "582563ed2edc62d1455cdbe00ea49fe09428eef3",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/20c23e85c86e5c06d63538ba464e8054f4744e62",
+                "reference": "20c23e85c86e5c06d63538ba464e8054f4744e62",
                 "shasum": ""
             },
             "require": {
@@ -6594,7 +6594,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.0.18"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.0.19"
             },
             "funding": [
                 {
@@ -6610,7 +6610,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-22T06:15:31+00:00"
+            "time": "2023-03-27T11:46:33+00:00"
         },
         {
             "name": "sebastian/cli-parser",

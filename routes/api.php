@@ -18,6 +18,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::resource('clients', 'ClientController');
+Route::resource('target-clients', 'TargetClientController');
 Route::resource('constants', 'ConstantController');
 Route::resource('office-shifts', 'OfficeShiftController');
 Route::resource('countries', 'CountryController');
