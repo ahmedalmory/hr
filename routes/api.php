@@ -25,3 +25,5 @@ Route::resource('departments', 'DepartmentController');
 Route::resource('designations', 'DesignationController');
 Route::resource('roles', 'RoleController');
 Route::resource('users', 'UserController');
+Route::resource('timesheets', 'TimesheetController');
+Route::resource('payslips', 'PayslipController');
