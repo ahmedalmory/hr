@@ -12,8 +12,8 @@ return new class () extends Migration {
     {
         Schema::create('payslip_commissions', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor('payslip_id');
-            $table->foreignIdFor('staff_id');
+            $table->foreignId('payslip_id');
+            $table->foreignId('staff_id');
             $table->boolean('is_taxable');
             $table->boolean('is_fixed');
             $table->string('pay_title', 200);
