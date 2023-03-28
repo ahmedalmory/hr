@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post('/register', 'AuthController@register');
+
+Route::post('/login', 'AuthController@login');
+
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
@@ -27,3 +32,5 @@ Route::resource('departments', 'DepartmentController');
 Route::resource('designations', 'DesignationController');
 Route::resource('roles', 'RoleController');
 Route::resource('users', 'UserController');
+Route::resource('timesheets', 'TimesheetController');
+Route::resource('payslips', 'PayslipController');
