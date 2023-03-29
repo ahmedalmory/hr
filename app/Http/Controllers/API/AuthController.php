@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+// use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 
 class AuthController extends Controller
@@ -14,14 +15,13 @@ class AuthController extends Controller
     {
         // Validate the request data
         $request->validate([
-            'name' => 'required|string',
+            'username' => 'required|string',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:6',
         ]);
-
-        // Create the users
-        $user = User::create([
-            'name' => $request->name,
+         // Create the users
+        $user =  User::create([
+            'username' => $request->username,
             'email' => $request->email,
             'password' => bcrypt($request->password),
         ]);
@@ -31,6 +31,7 @@ class AuthController extends Controller
 
         // Return a response with the token
         return response()->json(['token' => $token], 201);
+        // return response()->json(['message' => 'User has been registered'], 200);
     }
 
     public function login(Request $request)

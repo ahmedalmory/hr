@@ -13,11 +13,11 @@ return new class () extends Migration {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->foreignId('role_id')->nullable();
-            $table->string('type', 50);
-            $table->foreignId('company_id')->comment('user id');
-            $table->string('first_name');
-            $table->string('last_name');
-            $table->string('username');
+            $table->string('type', 50)->nullable();
+            $table->foreignId('company_id')->comment('user id')->nullable();
+            $table->string('first_name')->nullable();
+            $table->string('last_name')->nullable();
+            $table->string('username')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
@@ -26,9 +26,9 @@ return new class () extends Migration {
             $table->string('registration_no')->nullable();
             $table->string('government_tax')->nullable();
             $table->foreignId('company_type_id')->nullable();
-            $table->string('profile_photo');
+            $table->string('profile_photo')->nullable();
             $table->string('contact_number')->nullable();
-            $table->string('gender', 20);
+            $table->string('gender', 20)->nullable();
             $table->text('address_1')->nullable();
             $table->text('address_2')->nullable();
             $table->string('city')->nullable();
