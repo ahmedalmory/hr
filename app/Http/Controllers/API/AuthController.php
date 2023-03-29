@@ -19,7 +19,7 @@ class AuthController extends Controller
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:6',
         ]);
-         // Create the users
+        // Create the users
         $user =  User::create([
             'username' => $request->username,
             'email' => $request->email,
@@ -60,8 +60,8 @@ class AuthController extends Controller
     public function logout(Request $request)
     {
         // Revoke the current user's token
+    
         $request->user()->tokens()->delete();
-
         // Return a response with a success message
         return response()->json(['message' => 'Logged out'], 200);
     }
