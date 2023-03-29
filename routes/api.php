@@ -28,6 +28,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::resource('vacations', 'VacationController');
+Route::resource('vacation-type', 'VacationTypeController');
+
 Route::resource('clients', 'ClientController');
 Route::resource('target-clients', 'TargetClientController');
 Route::resource('constants', 'ConstantController');
