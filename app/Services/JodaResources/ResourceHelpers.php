@@ -104,18 +104,18 @@ trait ResourceHelpers
     protected function beforeStore()
     {
     }
-    protected function afterStore($model = null)
+    protected function afterStore($model)
     {
     }
 
-    protected function beforeUpdate($model = null)
+    protected function beforeUpdate($model)
     {
     }
-    protected function afterUpdate($model = null)
+    protected function afterUpdate($model)
     {
     }
 
-    protected function beforeDestroy($model = null)
+    protected function beforeDestroy($model)
     {
     }
     protected function afterDestroy()
