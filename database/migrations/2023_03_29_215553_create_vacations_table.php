@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('vacations', function (Blueprint $table) {
             $table->id();
 
-            $table->string('name')->nullable();
             $table->foreignId('employee_id')->nullable()->constrained('users')->nullOnDelete()->comment('user id');
             $table->foreignId('vacation_type_id')->nullable()->constrained('vacation_types')->nullOnDelete();
             $table->date('start_date')->nullable();
