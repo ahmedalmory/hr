@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class UserController extends APIController
+class UserController extends JodaApiController
 {
     protected $rules = [
         'role_id' => 'nullable|integer',

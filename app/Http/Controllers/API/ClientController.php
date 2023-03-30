@@ -6,6 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Models\Client;
 use Illuminate\Http\Request;
 
-class ClientController extends APIController
+class ClientController extends JodaApiController
 {
 }

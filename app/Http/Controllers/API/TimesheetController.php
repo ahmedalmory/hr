@@ -6,6 +6,6 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class TimesheetController extends APIController
+class TimesheetController extends JodaApiController
 {
 }

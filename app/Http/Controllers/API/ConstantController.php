@@ -7,6 +7,6 @@ use App\Models\Constant;
 
 use Illuminate\Http\Request;
 
-class ConstantController extends APIController
+class ConstantController extends JodaApiController
 {
 }

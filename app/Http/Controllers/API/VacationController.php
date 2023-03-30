@@ -7,6 +7,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Vacation;
 
-class VacationController extends APIController
+class VacationController extends JodaApiController
 {
 }

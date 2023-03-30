@@ -6,6 +6,6 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class OfficeShiftController extends APIController
+class OfficeShiftController extends JodaApiController
 {
 }

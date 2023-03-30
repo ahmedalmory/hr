@@ -6,6 +6,6 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class PayslipController extends APIController
+class PayslipController extends JodaApiController
 {
 }

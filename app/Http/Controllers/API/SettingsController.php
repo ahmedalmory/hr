@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Services\JodaResources\JodaResource;
 use Illuminate\Http\Request;
 
-class SettingsController extends APIController
+class SettingsController extends JodaApiController
 {
 
     protected $model = Setting::class;

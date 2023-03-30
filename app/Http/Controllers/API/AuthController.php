@@ -9,13 +9,14 @@ use Illuminate\Support\Facades\Auth;
 // use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 
-class AuthController extends APIController
+class AuthController extends Controller
 {
+    
     public function register(Request $request)
     {
         // Validate the request data
         $request->validate([
-            'username' => 'required|string',
+            'username' => 'required|string|unique:users,username',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:6',
         ]);
