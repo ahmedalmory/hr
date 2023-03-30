@@ -12,4 +12,8 @@ class Vacation extends Model
     public function vacation_type(){
         return $this->belongsTo(VacationType::class);
     }
+
+    public function user(){
+        return $this->belongsTo(User::class , 'employee_id' ,'id' );
+    }
 }

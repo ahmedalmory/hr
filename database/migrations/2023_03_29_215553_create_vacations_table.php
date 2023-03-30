@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
 
             $table->string('name')->nullable();
+            $table->foreignId('employee_id')->nullable()->constrained('users')->nullOnDelete()->comment('user id');
             $table->foreignId('vacation_type_id')->nullable()->constrained('vacation_types')->nullOnDelete();
             $table->date('start_date')->nullable();
             $table->date('end_date')->nullable();
