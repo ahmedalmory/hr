@@ -3,11 +3,9 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use App\Services\JodaResources\JodaApiResource;
+
 use Illuminate\Http\Request;
 
-class OfficeShiftController extends Controller
+class OfficeShiftController extends APIController
 {
-    use JodaApiResource;
-
 }

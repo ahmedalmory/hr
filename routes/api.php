@@ -28,17 +28,19 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('vacations', 'VacationController');
-Route::resource('vacation-type', 'VacationTypeController');
+Route::apiResource('settings', 'SettingsController');
 
-Route::resource('clients', 'ClientController');
-Route::resource('target-clients', 'TargetClientController');
-Route::resource('constants', 'ConstantController');
-Route::resource('office-shifts', 'OfficeShiftController');
-Route::resource('countries', 'CountryController');
-Route::resource('departments', 'DepartmentController');
-Route::resource('designations', 'DesignationController');
-Route::resource('roles', 'RoleController');
-Route::resource('users', 'UserController');
-Route::resource('timesheets', 'TimesheetController');
-Route::resource('payslips', 'PayslipController');
+Route::apiResource('vacations', 'VacationController');
+Route::apiResource('vacation-type', 'VacationTypeController');
+
+Route::apiResource('clients', 'ClientController');
+Route::apiResource('target-clients', 'TargetClientController');
+Route::apiResource('constants', 'ConstantController');
+Route::apiResource('office-shifts', 'OfficeShiftController');
+Route::apiResource('countries', 'CountryController');
+Route::apiResource('departments', 'DepartmentController');
+Route::apiResource('designations', 'DesignationController');
+Route::apiResource('roles', 'RoleController');
+Route::apiResource('users', 'UserController');
+Route::apiResource('timesheets', 'TimesheetController');
+Route::apiResource('payslips', 'PayslipController');

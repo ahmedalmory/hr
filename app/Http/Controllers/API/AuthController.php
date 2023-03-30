@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 // use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 
-class AuthController extends Controller
+class AuthController extends APIController
 {
     public function register(Request $request)
     {
@@ -60,7 +60,7 @@ class AuthController extends Controller
     public function logout(Request $request)
     {
         // Revoke the current user's token
-    
+
         $request->user()->tokens()->delete();
         // Return a response with a success message
         return response()->json(['message' => 'Logged out'], 200);
