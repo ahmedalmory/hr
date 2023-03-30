@@ -38,3 +38,4 @@ Route::resource('roles', 'RoleController');
 Route::resource('users', 'UserController');
 Route::resource('timesheets', 'TimesheetController');
 Route::resource('payslips', 'PayslipController');
+Route::resource('employees', 'EmployeesController');
