@@ -44,3 +44,4 @@ Route::apiResource('roles', 'RoleController');
 Route::apiResource('users', 'UserController');
 Route::apiResource('timesheets', 'TimesheetController');
 Route::apiResource('payslips', 'PayslipController');
+Route::resource('employees', 'EmployeesController');
