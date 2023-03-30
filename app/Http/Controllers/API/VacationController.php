@@ -5,7 +5,8 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+use App\Models\Vacation;
 
-class OfficeShiftController extends JodaApiController
+class VacationController extends JodaApiController
 {
 }

@@ -3,10 +3,9 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use App\Services\JodaResources\JodaApiResource;
+
 use Illuminate\Http\Request;
 
-class TimesheetController extends Controller
+class TimesheetController extends JodaApiController
 {
-    use JodaApiResource;
 }
